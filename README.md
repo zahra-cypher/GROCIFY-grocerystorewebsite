@@ -1,0 +1,1 @@
+The files index.html, products.html, about.html, services.html, contact.html are seperate from the pictures, the pictures are uploaded that way because of the requirement of the code so that it can appear on the website.
