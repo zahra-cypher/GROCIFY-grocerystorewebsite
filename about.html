@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - GROCIFY</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+background-color:#f7f9fc;
+color:#222;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+background:#d9f7d9;
+border-bottom:3px solid #27ae60;
+box-shadow:0 4px 15px rgba(39,174,96,0.15);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#1e7a35;
+display:flex;
+align-items:center;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#14532d;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#27ae60;
+}
+
+/* PAGE */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1,h2,h3{
+margin:0;
+font-weight:700;
+}
+
+.page-title{
+text-align:center;
+font-size:2.8rem;
+color:#2f9e44;
+margin:50px 0;
+letter-spacing:1.2px;
+}
+
+.mission{
+background:#d4edda;
+border-radius:12px;
+padding:35px 30px;
+box-shadow:0 6px 15px rgb(47 158 68 / 0.15);
+max-width:800px;
+margin:0 auto 70px;
+text-align:center;
+}
+
+.mission h2{
+color:#27ae60;
+margin-bottom:15px;
+font-size:2rem;
+}
+
+.mission p{
+font-size:1.15rem;
+line-height:1.6;
+color:#444;
+font-weight:500;
+}
+
+.team-section{
+margin-bottom:70px;
+}
+
+.team-section h2{
+text-align:center;
+color:#2f9e44;
+font-size:2.4rem;
+margin-bottom:45px;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:40px;
+padding:0 40px;
+}
+
+.team-card{
+background:white;
+border-radius:16px;
+box-shadow:0 8px 20px rgb(0 0 0 / 0.1);
+padding:30px 20px 40px;
+text-align:center;
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+cursor:default;
+}
+
+.team-card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 30px rgb(0 0 0 / 0.15);
+}
+
+.team-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+border:5px solid #2f9e44;
+box-shadow:0 4px 8px rgb(47 158 68 / 0.4);
+}
+
+.team-card h3{
+color:#222;
+font-size:1.3rem;
+margin-bottom:8px;
+font-weight:700;
+}
+
+.team-card p{
+color:#555;
+font-size:1rem;
+font-weight:600;
+letter-spacing:0.05em;
+}
+
+/* FOOTER */
+
+footer{
+background:#d9f7d9;
+padding:35px 20px;
+text-align:center;
+border-top:3px solid #27ae60;
+}
+
+.footer-social{
+margin-bottom:20px;
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.footer-social img{
+width:35px;
+height:35px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.footer-social img:hover{
+transform:scale(1.1);
+}
+
+footer p{
+color:#14532d;
+font-weight:600;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+padding:15px 20px;
+}
+
+nav{
+flex-wrap:wrap;
+gap:10px;
+}
+
+.page-title{
+font-size:2rem;
+margin:30px 0;
+}
+
+.mission{
+padding:25px 20px;
+}
+
+.team-grid{
+gap:25px;
+padding:0 20px;
+}
+
+.team-card{
+padding:20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<div class="logo">
+<img src="logo" alt="GROCIFY Logo" style="height:90px; vertical-align:middle; margin-right:20px;">
+GROCIFY
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<!-- PAGE TITLE -->
+
+<h1 class="page-title">About Our Grocery Store</h1>
+
+<!-- MISSION -->
+
+<section class="mission">
+
+<h2>Our Mission</h2>
+
+<p>
+At GROCIFY, our mission is to provide fresh, high-quality groceries to every household with convenience, affordability, and care.
+We are committed to sourcing sustainably, supporting local farmers, and delivering products that inspire healthy and happy living.
+Our goal is to make grocery shopping easy, enjoyable, and reliable for all our customers, every single day.
+</p>
+
+</section>
+
+<!-- TEAM SECTION -->
+
+<section class="team-section">
+
+<h2>Meet Our Team</h2>
+
+<div class="team-grid">
+
+<div class="team-card">
+<img src="ayesha 1" alt="Ayesha Nadeem Khan">
+<h3>Ayesha Nadeem Khan</h3>
+<p>Founder & CEO</p>
+</div>
+
+<div class="team-card">
+<img src="alishba 1" alt="Alishba Sohail">
+<h3>Alishba Sohail</h3>
+<p>Marketing Head</p>
+</div>
+
+<div class="team-card">
+<img src="sanyya 1" alt="Sanyya Hassan">
+<h3>Sanyya Hassan</h3>
+<p>Operations Manager</p>
+</div>
+
+<div class="team-card">
+<img src="fatima 1" alt="Fatima Shahid">
+<h3>Fatima Shahid</h3>
+<p>Customer Support Lead</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-social">
+
+<img src="fb" alt="Facebook">
+<img src="inst" alt="Instagram">
+<img src="twi" alt="Twitter">
+<img src="yt" alt="YouTube">
+
+</div>
+
+<p>
+© GROCIFY. Supporting local farmers, delivering fresh to your doorsteps
+</p>
+
+</footer>
+
+</body>
+</html>
